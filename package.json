@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "aws --profile farbod --region us-west-1 s3 sync ./dist s3://cashmere-ai-landing-page --delete"
   },
   "dependencies": {
     "core-js": "^3.8.3",

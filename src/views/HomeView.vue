@@ -91,7 +91,7 @@
           </div>
           <div class="image-section">
             <img src="@/assets/images/externalData.png"/>
-            <div class="caption">External Data</div>
+            <div class="caption">Internal + External Data</div>
           </div>
         </div>
       </div>
