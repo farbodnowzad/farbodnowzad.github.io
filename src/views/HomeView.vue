@@ -3,6 +3,13 @@
     <div class="row nav-bar">
       <div class="col nav-wrapper">
         <a href="/"><img src="@/assets/images/cashmere_ai_black.png" class="logo"/></a>
+        <div class="dropdown desktop-hide">
+          <button @click="openMenu" class="dropbtn"><img src="@/assets/icons/menu.png" class="menu-icon"/></button>
+          <div ref="myDropdown" class="dropdown-content">
+              <a href="/">Home</a>
+              <a href="/blog">Blog</a>
+          </div>
+        </div>
         <div class="nav-right mobile-hide">
           <a href="mailto:sales@cashmereai.com?subject=Cashmere AI Inquiry"><button class="subtext white nav-item-wrapper get-started-nav">Contact Us</button></a>
           <a href="/blog"><button class="nav-item-wrapper grey subtext">Blog</button></a>
@@ -154,7 +161,12 @@
 
 <script>
 export default {
-  name: 'HomeView'
+  name: 'HomeView',
+  methods: {
+    openMenu () {
+      this.$refs.myDropdown.classList.toggle('show')
+    }
+  }
 }
 </script>
 

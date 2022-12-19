@@ -3,6 +3,13 @@
       <div class="row nav-bar">
         <div class="col nav-wrapper">
           <a href="/"><img src="@/assets/images/cashmere_ai_black.png" class="logo"/></a>
+          <div class="dropdown desktop-hide">
+            <button @click="openMenu" class="dropbtn"><img src="@/assets/icons/menu.png" class="menu-icon"/></button>
+            <div ref="myDropdown" class="dropdown-content">
+                <a href="/">Home</a>
+                <a href="/blog">Blog</a>
+            </div>
+          </div>
           <div class="nav-right mobile-hide">
             <a href="mailto:sales@cashmereai.com?subject=Cashmere AI Inquiry"><button class="subtext white nav-item-wrapper get-started-nav">Contact Us</button></a>
             <a href="/blog"><button class="nav-item-wrapper grey subtext">Blog</button></a>
@@ -36,15 +43,16 @@ import BlogPost from '@/components/BlogPost.vue'
 
 export default {
   name: 'BlogView',
-  components: { BlogPost }
+  components: { BlogPost },
+  methods: {
+    openMenu () {
+      this.$refs.myDropdown.classList.toggle('show')
+    }
+  }
 }
 </script>
 
   <style scoped lang="scss">
-  .logo {
-    height: 40px;
-    width: auto;
-  }
   .sec-1 {
     background: linear-gradient(#444444, #2B2B2B);
     height: 85vh;
@@ -71,6 +79,7 @@ export default {
     padding-bottom: 16vh;
     text-align: center;
   }
+
   @media (min-width: 600px) {
     .desktop-hide {
         display: none;
