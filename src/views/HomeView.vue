@@ -2,10 +2,11 @@
   <div class="container-fluid">
     <div class="row nav-bar">
       <div class="col nav-wrapper">
-        <img src="@/assets/images/cashmere_ai_black.png" class="logo"/>
+        <a href="/"><img src="@/assets/images/cashmere_ai_black.png" class="logo"/></a>
         <div class="nav-right mobile-hide">
           <a href="mailto:sales@cashmereai.com?subject=Cashmere AI Inquiry"><button class="subtext white nav-item-wrapper get-started-nav">Contact Us</button></a>
-          <button class="nav-item-wrapper grey subtext">Home</button>
+          <a href="/blog"><button class="nav-item-wrapper grey subtext">Blog</button></a>
+          <a href="/"><button class="nav-item-wrapper grey subtext">Home</button></a>
         </div>
       </div>
     </div>
