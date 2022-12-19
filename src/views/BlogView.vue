@@ -8,6 +8,7 @@
             <div ref="myDropdown" class="dropdown-content">
                 <a href="/">Home</a>
                 <a href="/blog">Blog</a>
+                <a href="mailto:sales@cashmereai.com?subject=Cashmere AI Inquiry">Contact Us</a>
             </div>
           </div>
           <div class="nav-right mobile-hide">
