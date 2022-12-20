@@ -25,7 +25,7 @@
       </div>
       <div class="row">
         <div class="col-12 blogs">
-            <BlogPost url="https://cashmereai.substack.com/p/machine-learning-for-cross-selling"></BlogPost>
+            <BlogPost v-for="blog in blogs" :key="blog._id" :blog="blog"></BlogPost>
         </div>
       </div>
       <div class="row sec-11 p-4">
@@ -41,14 +41,27 @@
 
 <script>
 import BlogPost from '@/components/BlogPost.vue'
-
+const ENDPOINT = 'http://cashmere-dev.us-west-1.elasticbeanstalk.com'
 export default {
   name: 'BlogView',
   components: { BlogPost },
+  data () {
+    return {
+      blogs: []
+    }
+  },
   methods: {
     openMenu () {
       this.$refs.myDropdown.classList.toggle('show')
+    },
+    getBlogs () {
+      fetch(`${ENDPOINT}/blogs`)
+        .then((response) => response.json())
+        .then((data) => { this.blogs = data })
     }
+  },
+  mounted () {
+    this.getBlogs()
   }
 }
 </script>

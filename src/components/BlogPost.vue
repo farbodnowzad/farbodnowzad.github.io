@@ -1,14 +1,14 @@
 <template>
-  <a :href="url" target="_blank">
+  <a :href="blog.url" target="_blank">
     <div class="blog-post">
       <div class="content-container">
         <div class="left">
-          <img class="blog-preview" src="@/assets/images/bank_products.png"/>
+          <img class="blog-preview" :src="blog.image_url"/>
         </div>
         <div class="right">
-          <div class="title">Machine Learning for Cross-Selling</div>
-          <div class="body">Use automation to drive better results.</div>
-          <div class="subtext">December 19, 2022</div>
+          <div class="title">{{ blog.title }}</div>
+          <div class="body">{{ blog.description }}</div>
+          <div class="subtext">{{ blog.date }}</div>
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@
 export default {
   name: 'BlogPost',
   props: {
-    url: String
+    blog: Object
   }
 }
 </script>
