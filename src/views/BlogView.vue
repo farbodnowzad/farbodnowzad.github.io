@@ -28,12 +28,12 @@
             <BlogPost v-for="blog in blogs" :key="blog._id" :blog="blog"></BlogPost>
         </div>
       </div>
-      <div class="row sec-11 p-4">
+      <div class="row footer p-4">
         <div class="col bottom-text">
           <div class="title white">Eradicate uninformed & passive cross-selling through customer behavior intelligence</div>
           <div class="subtext lightgrey">Learn more about Cashmere AI today.</div>
           <a href="mailto:sales@cashmereai.com?subject=Cashmere AI Inquiry"><button class="get-started subtext">Contact Us --></button></a>
-          <div class="subtext lightgrey copyright">Copyright 2022 Pludo Inc.</div>
+          <div class="small lightgrey copyright">Copyright 2022 Pludo Inc.</div>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@
 
 <script>
 import BlogPost from '@/components/BlogPost.vue'
-const ENDPOINT = 'http://cashmere-dev.us-west-1.elasticbeanstalk.com'
+const ENDPOINT = 'https://api.cashmereai.com'
 export default {
   name: 'BlogView',
   components: { BlogPost },
@@ -67,11 +67,6 @@ export default {
 </script>
 
   <style scoped lang="scss">
-  .sec-1 {
-    background: linear-gradient(#444444, #2B2B2B);
-    height: 85vh;
-    position: relative;
-  }
   .image-wrapper {
     position: relative;
     height: 100%;
@@ -263,7 +258,7 @@ export default {
     height: 60vh;
     background-color: $grey;
   }
-  .sec-11 {
+  .footer {
     background: linear-gradient(#444444, #2B2B2B);
     // min-height: 30vh;
     // position: relative;

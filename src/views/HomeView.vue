@@ -19,15 +19,17 @@
       </div>
     </div>
     <div class="row sec-1">
-      <div class="col-12 col-xl-6 top-left">
-        <div class="header white">Maximize customer value</div>
-        <div class="title white">Intelligent, automated cross-selling that drives profit </div>
-        <div class="subtext lightgrey">Cashmere AI increases revenue from your existing customers by recommending the right product for the right person at the right time.</div>
-        <a href="mailto:sales@cashmereai.com?subject=Cashmere AI Inquiry"><button class="get-started body white">Contact Us --></button></a>
-      </div>
-      <div class="col-12 col-xl-6 top-right">
-        <div class="image-wrapper">
-          <img src="@/assets/images/header_image.png"/>
+      <div class="background-wrapper">
+        <div class="col-12 col-xl-6 top-left">
+          <div class="header white">Maximize customer value</div>
+          <div class="title white">Intelligent, automated cross-selling that drives profit </div>
+          <div class="subtext lightgrey">Cashmere AI increases revenue from your existing customers by recommending the right product for the right person at the right time.</div>
+          <a href="mailto:sales@cashmereai.com?subject=Cashmere AI Inquiry"><button class="get-started body white">Contact Us --></button></a>
+        </div>
+        <div class="col-12 col-xl-6 top-right">
+          <div class="image-wrapper">
+            <img src="@/assets/images/header_image.png"/>
+          </div>
         </div>
       </div>
     </div>
@@ -49,7 +51,8 @@
           <div class="col-12 col-xl-6 text-wrapper">
             <div class="interior-box-text">
               <div class="header white">Anticipate needs</div>
-              <div class="subtext lightgrey">Use Cashmere AI to shift from passive to active sales and meet customers where they're at.</div>
+              <div class="subtext lightgrey">Use Cashmere AI to shift from passive to active sales and meet customers where they're at. Use the power of machine learning to superchage customer engagement as well as critical revenue generating processes.</div>
+              <br class="desktop-hide">
             </div>
           </div>
           <div class="col-12 col-xl-6 centered">
@@ -149,12 +152,12 @@
         <div class="subtext lightgrey">Understand how revenue is being generated.</div>
       </div>
     </div> -->
-    <div class="row sec-11 p-4">
+    <div class="row footer p-4">
       <div class="col bottom-text">
         <div class="title white">Eradicate uninformed & passive cross-selling through customer behavior intelligence</div>
         <div class="subtext lightgrey">Learn more about Cashmere AI today.</div>
         <a href="mailto:sales@cashmereai.com?subject=Cashmere AI Inquiry"><button class="get-started subtext">Contact Us --></button></a>
-        <div class="subtext lightgrey copyright">Copyright 2022 Pludo Inc.</div>
+        <div class="small lightgrey copyright">Copyright 2022 Pludo Inc.</div>
       </div>
     </div>
   </div>
@@ -178,8 +181,18 @@ export default {
 }
 .sec-1 {
   background: linear-gradient(#444444, #2B2B2B);
+  // background-image: url("@/assets/images/geo_wave1.png");
+  // background-size: cover;
+  // background-position: center;
+  // background-color: $grey;
   height: 85vh;
   position: relative;
+}
+.background-wrapper {
+  // position: absolute;
+  height: 100%;
+  width: 100%;
+  // background-color: rgba(0,0,0,0.5);
 }
 .image-wrapper {
   position: relative;
@@ -361,12 +374,6 @@ export default {
 .sec-10 {
   height: 60vh;
   background-color: $grey;
-}
-.sec-11 {
-  background: linear-gradient(#444444, #2B2B2B);
-  // min-height: 30vh;
-  // position: relative;
-  text-align: center;
 }
 .bottom-text {
   padding-top: 40px;
