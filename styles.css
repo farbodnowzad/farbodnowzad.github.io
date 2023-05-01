@@ -1,0 +1,127 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    color: #4a4a4a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+}
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.jumbotron {
+    background-color: transparent;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.navbar-brand {
+    display: inline-block;
+    line-height: 48px;
+    vertical-align: middle;
+}
+.navbar-brand h5 {
+    display: inline-block;
+}
+.logo {
+    height: 80px;
+    display: inline-block;
+    margin-right: 12px;
+    border-radius: 5px;
+}
+.display-4 {
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav-link {
+    color: #4a4a4a;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #222;
+    text-decoration: none;
+}
+
+#services .card-title {
+    font-weight: 500;
+}
+
+#services .card-text {
+    font-size: 14px;
+    color: #555;
+}
+
+#about {
+    background-color: #f8f9fa;
+}
+
+#about p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
+}
+#logos {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+#logos img {
+    width: auto;
+    height: 80%;
+    max-height: 100px;
+    margin: 0 auto;
+}
+#contact {
+    background-color: #f8f9fa;
+}
+
+footer {
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.btn-primary {
+    background-color: #222;
+    border-color: #222;
+    padding: 12px;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #4a4a4a;
+    border-color: #4a4a4a;
+}
+#success {
+    display: none;
+}
