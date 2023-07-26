@@ -1,13 +1,14 @@
-.word-transition {
-    opacity: 1;
-    transition: opacity 0.5s;
-    background: -webkit-linear-gradient(right, #FF00B8, #e89529);
-    background: -o-linear-gradient(right, #FF00B8, #e89529);
-    background: -moz-linear-gradient(right, #FF00B8, #e89529);
-    background: linear-gradient(to right, #FF00B8, #e89529); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.mobile-only {
+    display: none;
 }
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+ }
 .logo {
     position: absolute;
     left: 50%;
@@ -19,6 +20,29 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+}
+ .logo img {
+     width: 120px;
+ }
+ .headline {
+     position: absolute;
+     left: 50%;
+     top: 0%;
+     transform: translate(-50%, -100%);
+     white-space: nowrap;
+     overflow: visible;
+     line-height: 2rem;
+ }
+ .word-transition {
+    opacity: 1;
+    transition: opacity 0.5s;
+    background: -webkit-linear-gradient(right, #FF00B8, #e89529);
+    background: -o-linear-gradient(right, #FF00B8, #e89529);
+    background: -moz-linear-gradient(right, #FF00B8, #e89529);
+    background: linear-gradient(to right, #FF00B8, #e89529); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .get-in-touch {
     margin-top: 16px;
@@ -33,6 +57,7 @@
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+    font-size: 0.8rem;
 }
 .get-in-touch:hover {
     background-color: black;
@@ -45,63 +70,32 @@
     bottom: 5%;
     transform: translate(-50%, 0%);
 }
-@media only screen and (max-width: 600px) {
+ .footer span {
+     color: lightgrey;
+     font-size: 0.8rem;
+ }
+
+@media only screen and (max-width: 1000px) {
+    .mobile-only {
+        display: block;
+    }
     body {
-        position: relative;
-        height: 100vh;
-        width: 100vw;
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-     }
-     .logo {
-        width: 25%;
-     }
-     .logo img {
-         width: 100%;
-     }
-     .headline {
-         position: absolute;
-         left: 50%;
-         top: 0%;
-         transform: translate(-50%, -100%);
-         width: 98vw;
-         font-size: 16px;
-         white-space: nowrap;
-         overflow: visible;
-         font-size: 2.2rem;
-     }
-     .get-in-touch {
-        margin-top: 2rem;
+        height: 90vh;
         font-size: 2rem;
      }
-     .footer span {
-         color: lightgrey;
-         font-size: 2rem;
-     }
-}
-@media only screen and (min-width: 600px) {
-    body {
-        position: relative;
-        height: 100vh;
-        width: 100vw;
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-     }
      .logo img {
-         width: 120px;
+         width: 200px;
      }
      .headline {
-         position: absolute;
-         left: 50%;
-         top: 0%;
-         transform: translate(-50%, -100%);
-         width: 400px;
-         font-size: 16px;
-         white-space: nowrap;
-         overflow: visible;
+        line-height: 4rem;
+     }
+     .get-in-touch {
+        font-size: 1.6rem;
+        padding: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
      }
      .footer span {
-         color: lightgrey;
-         font-size: 14px;
+         font-size: 1.6rem;
      }
 }
