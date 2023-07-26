@@ -35,14 +35,15 @@ body {
      line-height: 2rem;
  }
  .word-transition {
-    opacity: 1;
-    transition: opacity 0.5s;
-    background: -webkit-linear-gradient(right, #FF00B8, #e89529);
-    background: -o-linear-gradient(right, #FF00B8, #e89529);
-    background: -moz-linear-gradient(right, #FF00B8, #e89529);
-    background: linear-gradient(to right, #FF00B8, #e89529); 
+    background-color: #FF00B8;
+    background-image: linear-gradient(45deg, #FF00B8, #e89529);
+    background-clip: text;
+    background-size: 100%;
+    text-fill-color: transparent;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 .get-in-touch {
     margin-top: 16px;
