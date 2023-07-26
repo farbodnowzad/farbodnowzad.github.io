@@ -19,7 +19,6 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    /* text-align: center; */
 }
 .get-in-touch {
     margin-top: 16px;
@@ -46,6 +45,40 @@
     bottom: 5%;
     transform: translate(-50%, 0%);
 }
+@media only screen and (max-width: 600px) {
+    body {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+     }
+     .logo {
+        width: 25%;
+     }
+     .logo img {
+         width: 100%;
+     }
+     .headline {
+         position: absolute;
+         left: 50%;
+         top: 0%;
+         transform: translate(-50%, -100%);
+         width: 98vw;
+         font-size: 16px;
+         white-space: nowrap;
+         overflow: visible;
+         font-size: 2.2rem;
+     }
+     .get-in-touch {
+        margin-top: 2rem;
+        font-size: 2rem;
+     }
+     .footer span {
+         color: lightgrey;
+         font-size: 2rem;
+     }
+}
 @media only screen and (min-width: 600px) {
     body {
         position: relative;
@@ -66,38 +99,9 @@
          font-size: 16px;
          white-space: nowrap;
          overflow: visible;
-         /* text-align: center; */
      }
      .footer span {
          color: lightgrey;
          font-size: 14px;
-     }
-}
-@media only screen and (max-width: 600px) {
-    body {
-        position: relative;
-        height: 90vh;
-        width: 100vw;
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        font-size: 1rem;
-     }
-     .logo img {
-         width: 20%;
-     }
-     .headline {
-         position: absolute;
-         left: 50%;
-         top: 0%;
-         transform: translate(-50%, -100%);
-         width: 400px;
-         font-size: 1.2rem;
-         white-space: nowrap;
-         overflow: visible;
-         /* text-align: center; */
-     }
-     .footer span {
-         color: lightgrey;
-         font-size: 1rem;
      }
 }
